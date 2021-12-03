@@ -1,0 +1,178 @@
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.graphics-container {
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.graphics-contents {
+  /* background-color: tomato; */
+  width: 70vw;
+  margin: 0 auto;
+  padding: 3rem 0 3rem;
+}
+
+.graphics-contents .header {
+  margin-bottom: 40px;
+}
+
+.graphics-contents h5 {
+  animation: fade-in-left 1s ease-in-out .5s both;
+}
+
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
+
+  gap: 5px;
+  height: 90%;
+  /* animation: fade-in-left 1s ease-in-out 1.5s both; */
+}
+
+#item-0 {
+  /* background-color: #769966; */
+  background: url("../assets/dragon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+  height: 250px;
+  cursor: pointer;
+}
+#item-1 {
+  /* background-color: #b7998d; */
+  background: url("../assets/rave.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 5;
+  cursor: pointer;
+}
+#item-2 {
+  /* background-color: #5679ff; */
+  background: url("../assets/bikerace.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-column-start: 5;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+  cursor: pointer;
+}
+
+#item-4 {
+  /* background-color: #9896db; */
+  background: url("../assets/michaelangelo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 2;
+  grid-column-start: 4;
+
+  grid-row-end: 3;
+  grid-column-end: 5;
+  cursor: pointer;
+}
+#item-5 {
+  /* background-color: #b795bb; */
+  background: url("../assets/gel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 4;
+  cursor: pointer;
+}
+#item-6 {
+  /* background-color: #cb9eb7; */
+  background: url("../assets/wowPoster.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 460px) {
+  .graphics-contents {
+    /* background-color: tomato; */
+    width: 90vw;
+    margin: 0 auto;
+    padding: 3rem 0 3rem;
+  }
+
+  #item-0 {
+    background-position: left;
+    height: 150px;
+  }
+
+  #item-1 {
+    background-position: 70%;
+  }
+
+  #item-4 {
+    /* background-color: #9896db; */
+    background: url("../assets/michaelangelo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-column-start: 4;
+
+    grid-row-end: 3;
+    grid-column-end: 5;
+  }
+  #item-5 {
+    /* background-color: #b795bb; */
+    background: url("../assets/gel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 3;
+    grid-column-end: 4;
+  }
+  #item-6 {
+    /* background-color: #cb9eb7; */
+    background: url("../assets/wowPoster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+}

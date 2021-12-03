@@ -1,0 +1,151 @@
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact-container {
+    background-color: #010101;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contact-contents {
+    /* background-color: tomato; */
+    width: 70vw;
+    margin: 0 auto;
+    padding: 3rem 0 3rem;
+}
+
+.contact-contents .header-bar {
+    background-color: #fff;
+}
+
+.contact-contents .header {
+    margin-bottom: 40px;
+}
+
+.contact-contents h5 {
+    animation: fade-in-left 1s ease-in-out 0.5s both;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-info {
+    background-color: #cc33ff;
+    width: 40%;
+    padding: 2rem;
+    background: url('../assets/background2.jpg');
+}
+
+.contact-icons {
+    text-align: center;
+}
+
+.contact-social {
+    color: #fff;
+}
+
+.contact-social .fab {
+    padding: 20px;
+}
+
+.contact-social .fab:hover {
+    color: #cc33ff;
+}
+
+.qr-code {
+    margin: 30px auto;
+}
+
+.form-body {
+    /* background: #eee; */
+    display: flex;
+    justify-content: center;
+    color: #eee;
+    border-radius: 30px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    width: 190px;
+    height: 55px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #cc33ff;
+    transition: 0.5s linear;
+    color: white;
+    font-weight: bold;
+    /* margin-top: 20%; */
+}
+
+form button:hover {
+    background-color: unset;
+    border: 2px solid #cc33ff;
+    transition: 0.5s linear;
+}
+
+.formWord {
+    width: 70%;
+    padding: 2rem 0;
+}
+
+.formWord input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    border: 0;
+    margin-top: .1rem;
+    padding-left: 3%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgb(218, 218, 218);
+}
+
+.formWord textarea {
+    width: 100%;
+    margin-bottom: 10%;
+    border: 0;
+    margin-top: 2%;
+    height: 150px;
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgb(218, 218, 218);
+    padding-left: 3%;
+}
+
+@media screen and (max-width: 460px) {
+    .contact-info {
+        display: none;
+    }
+
+    .contact-contents {
+        /* background-color: tomato; */
+        width: 90vw;
+        padding: 3rem 0;
+    }
+
+    .formWord {
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .contact-info {
+        display: none;
+    }
+}

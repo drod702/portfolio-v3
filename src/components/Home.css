@@ -1,0 +1,62 @@
+.home-container {
+    background: url('../assets/background2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.home-name {
+    color: #fff;
+}
+
+.home-subText {
+    color: #fff;
+}
+
+.home-social .fab {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.home-social .fab:hover {
+    color: #cc33ff;
+}
+
+.btn {
+    background-color: #cc33ff;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #cc33ff;
+    background-color: #77009e;
+}
+
+.btn .fas {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 460px) {
+    .home-name {
+        font-size: 1.5rem;
+    }
+
+    .home-subText {
+        font-size: 1.2rem;
+    }
+}
